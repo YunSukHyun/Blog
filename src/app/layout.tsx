@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Inter, Nanum_Gothic, Open_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import PostPage from "./post/page";
+import { ThemeProvider } from "@/context/DarkModeProvider";
+import { ToggleDarkMode } from "@/components/ToggleDarkMode";
 
 const inter = Inter({ subsets: ["latin"] });
 const sans = Open_Sans({ subsets: ["latin"], variable: "--font-open" });
@@ -27,10 +29,13 @@ export default function RootLayout({
   return (
     <html className={inter.className} lang="en">
       <body className="flex flex-col w-full max-w-screen-2xl mx-auto">
-        <Header />
-        <main className="grow">{children}</main>
-        <PostPage />
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ToggleDarkMode />
+          <Header />
+          <main className="grow">{children}</main>
+          <PostPage />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
