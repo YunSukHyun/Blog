@@ -6,7 +6,7 @@ export const FeaturedPost = async () => {
   const posts = await getFeaturedPost();
   return (
     <section className="my-2">
-      <h2 className="text-2xl font-bold">Featured Posts</h2>
+      <h2 className="text-2xl font-bold my-1 mx-2">Featured Posts</h2>
       <PostGrid posts={posts} />
     </section>
   );

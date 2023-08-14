@@ -15,7 +15,7 @@ const Profile = () => {
       <h3 className="text-xl font-semibold">Front-end Engineer</h3>
       <div>Normal Developer</div>
       <Link href="/contact">
-        <button className="bg-yellow-500 font-bold rounded-md py-1 px-4">
+        <button className="bg-yellow-500 font-bold rounded-md py-1 m-1 px-4">
           Contact Me
         </button>
       </Link>

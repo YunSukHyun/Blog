@@ -19,10 +19,12 @@ export const PostCard = ({
         />
       </article>
       <div className="flex flex-col items-center p-2">
-        <time className="self-auto">{date.toString()}</time>
+        <time className="self-auto text-gray-700 dark:text-gray-200">
+          {date.toString()}
+        </time>
         <h3 className="text-lg font-bold">{title}</h3>
         <p className="w-full truncate text-center">{description}</p>
-        <span className="text-sm rounded-md bg-green-200 px-2 my-2">
+        <span className="text-sm rounded-md bg-green-100 dark:bg-green-600 px-2 my-2">
           {category}
         </span>
       </div>
