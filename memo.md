@@ -13,3 +13,11 @@
 ### flex가 만능은 아니다. 가운데 정렬을 위해 반드시 flex를 써야하는것은 아님
 
 ### Image를 먼저가져오기 위해 Image에 priority 속성을 넣을 수 있다.
+
+### 단계별로 나눠서 생각하기 메인화면 포스트는 포스트 데이터를 읽어오고 포스트데이터를 보여준다. 2단계로
+
+### 비지니스 로직은 컴포넌트와 분리하자
+
+### tailwindcss truncate는 w-full일 때만 적용된다.
+
+### OtherPost에서는 react-multi-Carousel을 쓰는 부분에 client 컴포넌트를 사용했다.
