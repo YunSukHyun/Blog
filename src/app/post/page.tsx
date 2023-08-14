@@ -1,5 +1,5 @@
 const PostPage = () => {
-  return <div>PostPage</div>;
+  return <section>Featured Posts</section>;
 };
 
 export default PostPage;

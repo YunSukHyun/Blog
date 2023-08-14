@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Nanum_Gothic, Open_Sans } from "next/font/google";
 import Header from "@/components/Header";
+import PostPage from "./post/page";
 
 const inter = Inter({ subsets: ["latin"] });
 const sans = Open_Sans({ subsets: ["latin"], variable: "--font-open" });
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className="flex flex-col w-full max-w-screen-2xl mx-auto">
         <Header />
         <main className="grow">{children}</main>
+        <PostPage />
         <Footer />
       </body>
     </html>
