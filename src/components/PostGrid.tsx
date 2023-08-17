@@ -1,4 +1,4 @@
-import { Post } from "@/ service/posts";
+import { Post } from "@/service/posts";
 import { PostCard } from "./PostCard";
 
 export const PostGrid = ({ posts }: { posts: Post[] }) => {

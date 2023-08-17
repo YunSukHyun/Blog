@@ -1,4 +1,4 @@
-import { getFeaturedPost } from "@/ service/posts";
+import { getFeaturedPost } from "@/service/posts";
 import React from "react";
 import { PostGrid } from "./PostGrid";
 

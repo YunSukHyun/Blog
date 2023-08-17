@@ -1,4 +1,4 @@
-import { getOtherPost } from "@/ service/posts";
+import { getOtherPost } from "@/service/posts";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { MultiCarousel } from "./MultiCarousel";
