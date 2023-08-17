@@ -33,7 +33,6 @@ export default function RootLayout({
           <ToggleDarkMode />
           <Header />
           <main className="grow">{children}</main>
-          <PostPage />
           <Footer />
         </ThemeProvider>
       </body>
