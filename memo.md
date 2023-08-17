@@ -21,3 +21,5 @@
 ### tailwindcss truncate는 w-full일 때만 적용된다.
 
 ### OtherPost에서는 react-multi-Carousel을 쓰는 부분에 client 컴포넌트를 사용했다.
+
+### 상태를 가지기 위해선 컴포넌트는 client 컴포넌가 되어야한다.
