@@ -8,7 +8,7 @@ export const PostCard = ({
   post: { title, description, date, category, path },
 }: Props) => {
   return (
-    <Link href={`/post/${path}`}>
+    <Link href={`/posts/${path}`}>
       <article className="rounded-sm overflow-hidden shadow-lg">
         <Image
           className="w-full"

@@ -3,7 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Nanum_Gothic, Open_Sans } from "next/font/google";
 import Header from "@/components/Header";
-import PostPage from "./post/page";
+import PostPage from "./posts/page";
 import { ThemeProvider } from "@/context/DarkModeProvider";
 import { ToggleDarkMode } from "@/components/ToggleDarkMode";
 

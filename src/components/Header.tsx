@@ -11,7 +11,7 @@ const Header = () => {
         <Link className="p-2" href="/">
           Home
         </Link>
-        <Link className="p-2" href="/post">
+        <Link className="p-2" href="/posts">
           Post
         </Link>
         <Link className="p-2" href="/about">

@@ -1,5 +1,4 @@
 import { getAllPosts } from "@/service/posts";
-import { PostGrid } from "@/components/PostGrid";
 import { FilterablePosts } from "@/components/FilterablePost";
 
 const PostPage = async () => {
