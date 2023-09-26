@@ -10,6 +10,12 @@ export type Post = {
   featured: boolean;
 };
 
+export type PostData = Post & {
+  content: string;
+  next: Post | null;
+  prev: Post | null;
+};
+
 export const getAllPosts = async (): Promise<Post[]> => {
   const filePath = path.join(process.cwd(), "data", "posts.json");
   return readFile(filePath, "utf-8")
@@ -27,10 +33,12 @@ export const getOtherPost = async () => {
 
 export const getPostData = async (fileName: string) => {
   const filePath = path.join(process.cwd(), "data", "posts", `${fileName}.md`);
-  const metadata = await getAllPosts().then((posts) =>
-    posts.find((post) => post.path === fileName)
-  );
-  if (!metadata) throw Error(`${fileName} Not found`);
+  const posts = await getAllPosts();
+  const post = posts.find((post) => post.path === fileName);
+  if (!post) throw Error(`${fileName}`);
+  const idx = posts.indexOf(post);
+  const next = idx > 0 ? posts[idx - 1] : null;
+  const prev = idx < posts.length - 1 ? posts[idx + 1] : null;
   const content = await readFile(filePath, "utf-8");
-  return { ...metadata, content };
+  return { ...post, content, next, prev };
 };

@@ -23,3 +23,7 @@
 ### OtherPost에서는 react-multi-Carousel을 쓰는 부분에 client 컴포넌트를 사용했다.
 
 ### 상태를 가지기 위해선 컴포넌트는 client 컴포넌가 되어야한다.
+
+### tailwindcss group 이라는 기능을 활용하자
+
+### 동일하게 적용되는 tailwindcss는 const 변수로 선언하자
